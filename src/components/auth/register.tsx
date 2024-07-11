@@ -21,8 +21,7 @@ import { Input } from '@/components/ui/input.tsx';
 import { Button } from '@/components/ui/button.tsx';
 import { useAuthContext } from '@/contexts/auth.context.tsx';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const formSchema = z
   .object({
@@ -72,7 +71,11 @@ export default function Register() {
                 <FormItem>
                   <FormLabel>Login</FormLabel>
                   <FormControl>
-                    <Input placeholder="mylogin" {...field} />
+                    <Input
+                      placeholder="mylogin"
+                      {...field}
+                      data-testid="@register/login"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -85,7 +88,11 @@ export default function Register() {
                 <FormItem>
                   <FormLabel>Password</FormLabel>
                   <FormControl>
-                    <Input type="password" {...field} />
+                    <Input
+                      type="password"
+                      {...field}
+                      data-testid="@register/password"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

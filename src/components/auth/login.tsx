@@ -21,8 +21,7 @@ import { Input } from '@/components/ui/input.tsx';
 import { Button } from '@/components/ui/button.tsx';
 import { useAuthContext } from '@/contexts/auth.context.tsx';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const formSchema = z.object({
   login: z.string().min(5).max(20),
