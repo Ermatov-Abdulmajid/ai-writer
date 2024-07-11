@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
         <div>
           <DropdownMenu>
-            <DropdownMenuTrigger>Ulugbek</DropdownMenuTrigger>
+            <DropdownMenuTrigger>Abdumajid</DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>Profile</DropdownMenuItem>
               <DropdownMenuSeparator />
